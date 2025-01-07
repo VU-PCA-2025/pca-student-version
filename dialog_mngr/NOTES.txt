@@ -1,0 +1,30 @@
+Last year students had to write some Prolog code that I now (had to) add(ed) to make stuff work:
+
+Project Assignment: Capability 2: Request a Recommendation
+--> added: recipeIDs(RecipeIDs) :- setof(RecipeID, recipeID(RecipeID), RecipeIDs).
+--> added: recipesFiltered(RecipeIDs) :-
+	recipeIDs(RecipeIDsAll),
+	filters_from_memory(Filters),
+	recipesFiltered(RecipeIDsAll, Filters, RecipeIDsFiltered),
+	list_to_set(RecipeIDsFiltered, RecipeIDs).
+--> recipesFiltered(RecipeIDs, [], RecipeIDs).
+% Project Assignment: Capability 5: Filter Recipes by Ingredients
+--> recipesFiltered(RecipeIDsIn, [ ParamName = Value | Filters], RemainingRecipeIDs) :-
+	applyFilterCheck(ParamName, Value, RecipeIDsIn, RecipeIDsOut),
+	recipesFiltered(RecipeIDsOut, Filters, RemainingRecipeIDs).
+--> applyFilterCheck(ParamName, Value, RecipeIDsIn, RecipeIDsOut) :-
+	is_list(Value), [H | T] = Value,
+	applyFilter(ParamName, H, RecipeIDsIn, RecipeIDsOut),
+	applyFilterCheck(ParamName, T, RecipeIDsIn, RecipeIDsOut).
+--> applyFilterCheck(_, [], RecipeIDsIn, RecipeIDsIn).
+	--> applyFilterCheck(ParamName, Value, RecipeIDsIn, RecipeIDsOut) :-
+	not(is_list(Value)),
+	applyFilter(ParamName, Value, RecipeIDsIn, RecipeIDsOut).
+% Project Assignment: Capability 5: Filter Recipes by Ingredients (Apply filter checking that a recipe is from a particular cuisine.)
+--> applyFilter('cuisine', Cuisine, RecipeIDsIn, RecipeIDsOut) :-
+	findall(RecipeID, (member(RecipeID, RecipeIDsIn), cuisine(RecipeID, Cuisine)), RecipeIDsOut).
+	
+I've also given the pattern:
+--> pattern([c10, [agent, greeting], [user, greeting]]) :- agentName('').
+to have at least one pattern to get started.
+They still need to provide some greeting text for the agent in the responses.pl file though, before the agent will actually say something.

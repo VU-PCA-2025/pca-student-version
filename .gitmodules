@@ -1,0 +1,9 @@
+[submodule "sic_applications"]
+	path = sic_applications
+	url = git@github.com:VU-PCA-2025/sic_applications.git
+[submodule "sic-full-version"]
+	path = sic-full-version
+	url = git@github.com:VU-PCA-2025/sic-full-version.git
+[submodule "sic-student-version"]
+	path = sic-student-version
+	url = git@github.com:VU-PCA-2025/sic-student-version.git

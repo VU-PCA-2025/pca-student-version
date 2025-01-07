@@ -1,0 +1,21 @@
+
+# Project Conversational Agents Repository
+
+Welcome to the repository for the **Project Conversational Agents** course. This project focuses on developing a conversational agent capable of recommending recipes from a database of nearly 1,000 options. The agent will use **speech** as its primary interaction mode, supported by a **visual interface** for displaying relevant information.
+
+### **Project Goals**
+- Understand user preferences and constraints (e.g., ingredients, cooking time, dish type).
+- Reason over a large recipe database to provide accurate recommendations.
+- Handle diverse conversational styles while maintaining task focus.
+
+Starting from a **Prolog database** and a basic agent template, students will develop core functionalities, systematically test the agent, and refine its performance. Teams are encouraged to add creative features to enhance usability and functionality.
+
+### **Resources**
+- **Course Confluence Home**: [https://socialrobotics.atlassian.net/wiki/spaces/PCA2/overview](https://socialrobotics.atlassian.net/wiki/spaces/PCA2/overview)
+- **Canvas Course Page**: [https://canvas.vu.nl/courses/77576](https://canvas.vu.nl/courses/77576)
+
+Collaborate effectively, track contributions, and make regular commits to ensure a successful project!
+
+---
+## Files You Need for the Project
+TODO
