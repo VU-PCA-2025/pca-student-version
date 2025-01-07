@@ -18,4 +18,11 @@ Collaborate effectively, track contributions, and make regular commits to ensure
 
 ---
 ## Files You Need for the Project
-TODO
+sic = [social interaction cloud](https://socialrobotics.atlassian.net/wiki/spaces/CBSR/overview)
+We use V2.
+- `sic_applications/demo_asr_nlu.py`
+- `BellaBot-PCA-2025.zip`
+- `environment.yaml`
+- `Report.md`
+- `sic-student-version/sic_framework/services/nlu/*`
+- `sic-student-version/sic_framework/services/webserver/*`
