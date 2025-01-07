@@ -3,7 +3,6 @@ channels:
   - defaults
 dependencies:
   - anyio=4.6.2
-  - appnope=0.1.2
   - argon2-cffi=21.3.0
   - argon2-cffi-bindings=21.2.0
   - asttokens=2.0.5
@@ -42,7 +41,6 @@ dependencies:
   - jupyterlab=4.2.5
   - jupyterlab_pygments=0.1.2
   - jupyterlab_server=2.27.3
-  - libcxx=14.0.6
   - libffi=3.4.4
   - libsodium=1.0.18
   - matplotlib-inline=0.1.6
@@ -50,7 +48,6 @@ dependencies:
   - nbclient=0.8.0
   - nbconvert=7.16.4
   - nbformat=5.10.4
-  - ncurses=6.4
   - nest-asyncio=1.6.0
   - notebook=7.2.2
   - notebook-shim=0.2.3
@@ -75,7 +72,6 @@ dependencies:
   - python-json-logger=2.0.7
   - pyyaml=6.0.2
   - pyzmq=25.1.2
-  - readline=8.2
   - referencing=0.30.2
   - requests=2.32.3
   - rfc3339-validator=0.1.4
