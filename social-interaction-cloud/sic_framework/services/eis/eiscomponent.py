@@ -77,7 +77,7 @@ class EISComponent(SICComponent):
 
         # Init parameters
         # ASSUMPTION: Google TTS service will be used
-        self.params.use_espeak = True
+        self.params.use_espeak = False
         # Keyfile needed for Dialogflow and Google TTS
         # ASSUMPTION: This file is named 'dialogflow-keyfile.json' and added to the services/eis folder
         self.keyfile_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dialogflow-keyfile.json")
@@ -98,7 +98,8 @@ class EISComponent(SICComponent):
         # Setup SIC components that we want to use
         self._setup_redis()  # Setup a Redis client
         self._setup_hardware()
-        self._setup_text_to_speech()
+        if not self.params.use_espeak:
+            self._setup_text_to_speech()
         self._setup_dialogflow()
         self._setup_webserver()
 
