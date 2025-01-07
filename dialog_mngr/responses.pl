@@ -80,7 +80,7 @@ text_generator(Intent, SelectedText) :-
 
 
 % Intent: greeting
-
+text(greeting, "Hey there!").
 
 % Intent: paraphraseRequest
 
