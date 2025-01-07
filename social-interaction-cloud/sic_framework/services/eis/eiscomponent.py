@@ -77,7 +77,7 @@ class EISComponent(SICComponent):
 
         # Init parameters
         # ASSUMPTION: Google TTS service will be used
-        self.params.use_espeak = False
+        self.params.use_espeak = True
         # Keyfile needed for Dialogflow and Google TTS
         # ASSUMPTION: This file is named 'dialogflow-keyfile.json' and added to the services/eis folder
         self.keyfile_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dialogflow-keyfile.json")
