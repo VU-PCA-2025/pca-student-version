@@ -75,8 +75,8 @@ setup(
             "run-whisper=sic_framework.services.openai_whisper_speech_to_text:main",
             "run-text2speech=sic_framework.services.text2speech.text2speech_service:main",
             "run-webserver=sic_framework.services.webserver.webserver_pca:main",
-            "start-framework=sic_framework.services.eis.run_eis:main",
-            "run-eis=sic_framework.services.eis.eiscomponent:main",
+            "run-eis=sic_framework.services.eis.run_eis:main",
+            "start-framework=sic_framework.services.eis.eiscomponent:main",
 
         ],
     },
